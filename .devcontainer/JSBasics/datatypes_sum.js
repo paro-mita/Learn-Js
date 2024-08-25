@@ -37,3 +37,30 @@ console.log(typeof fruits);
 console.log(typeof reg);
 console.log(typeof myFunc);
 
+// ---------- Memory Alloation-------------
+
+//Primitive datatypes --> Stack Memory
+// Non-Primitive datatypes --> Heap Memory
+
+//Examples
+
+let name2 = "ME"
+let changeName = name2 // Here it doesn't get the original value, but the Copy of the original value
+changeName = "Lost"
+console.log(changeName);// it will print Lost
+console.log(name2);// this will remain the same
+
+let user ={
+    email:"abc@gmail.com",
+    upi:"abc@ybl"
+}
+
+let otherUser = user 
+// it will have the reference of original value, means if we make changes in this, original value also get changed
+
+otherUser.email = "xyz@gamil.com"
+console.log(otherUser.email);
+console.log(user.email);
+// above both will print same value
+
+
