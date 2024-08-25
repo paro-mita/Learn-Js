@@ -62,5 +62,6 @@ otherUser.email = "xyz@gamil.com"
 console.log(otherUser.email);
 console.log(user.email);
 // above both will print same value
+// this is the basics of memo allocation in jS
 
 
